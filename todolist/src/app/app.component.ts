@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todolist';
+
+  public itens = ['item 1', 'item 2', 'item 3', 'item 4'];
+
+  
+  
 }
