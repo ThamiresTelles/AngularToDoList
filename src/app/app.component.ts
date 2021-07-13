@@ -1,3 +1,4 @@
+import { identifierModuleUrl } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,8 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public itens = ['item 1', 'item 2', 'item 3', 'item 4'];
 
+  public tarefa = "";
+  public itens = ['item 1'];
+
+  addTarefa() {
+    this.itens.push(this.tarefa);
+
+  }
+
+  removeTarefa(index: number) {
+    this.itens.splice(index, 1);
+  }
+
+ 
   
-  
-}
+}      
